@@ -8,7 +8,7 @@ This C# project contains a proof of work solver for the Akamai Anti-Bot system. 
 
 To use the solver, create an instance of the `Solver` class with the following parameters:
 
-- `sec`: The security code string.
+- `sec`: The first segment of the sec-cpt cookie (up until the first ~ character)
 
 - `timestamp`: The timestamp value.
 
