@@ -12,7 +12,7 @@ const bdm = function(buffer, t) {
 const computePoW = function(payload) {
     let { sec, timestamp, nonce, difficulty} = payload;
     const nVals = [];
-    while (true && this.running) {
+    while (true) {
         const randomBytes = crypto.randomBytes(8).toString('hex');
         const n = `0.${randomBytes}`;
         const toHash = `${sec}${timestamp}${nonce}${difficulty}${n}`;
